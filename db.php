@@ -5,7 +5,7 @@
             
             $dbh = new PDO($dsn, $user, $password);
             // echo 'Connected <br>';
-            $sql = 'SELECT * from todos order by todoID';
+            $sql = 'SELECT * from todos order by isComplete';
             $result = $dbh->query($sql);
     }
         
